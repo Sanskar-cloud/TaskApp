@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "656684324319",
+    "project_id": "phone-2c25d",
+    "storage_bucket": "phone-2c25d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656684324319:android:5d7930e463eaa64450a06a",
+        "android_client_info": {
+          "package_name": "com.shaluambasta.phonenumlogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZzR0DjJdBW87s0dxprxzSJu4AxsjsAK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
