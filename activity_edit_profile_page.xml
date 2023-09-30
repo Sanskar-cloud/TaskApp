@@ -1,110 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context=".EditProfilePage">
-
+    android:padding="16dp">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/setting_profile_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-
-        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
         android:scaleType="centerCrop"
         android:src="@drawable/name2"
-        android:clipToOutline="true"
-
-        app:strokeWidth="2dp" />
-
+        />
 
     <TextView
-        android:id="@+id/mail"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:id="@+id/editTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_gravity="center"
-        android:layout_marginTop="8dp"
+        android:layout_below="@id/setting_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="John Doe"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text=""/>
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/name"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:id="@+id/editTextTextPersonNameemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_below="@id/editTextPersonName"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
+        android:text="user@example.com"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text=""/>
+        android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/age"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:id="@+id/editTextTextPersonNameage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
+        android:layout_below="@id/editTextTextPersonNameemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Age: 30"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text=""/>
+        android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/college"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:id="@+id/editTextTextcollege"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_below="@id/editTextTextPersonNameage"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
+        android:text="ABC University"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text=""/>
-
-
-
-
-
-
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/image"
-
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextTextcollege"
+        android:layout_marginTop="24dp"
         android:text="Call"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#784C0B"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp" />
 
-        android:textSize="14sp"
-
-        />
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_below="@+id/B_School"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        tools:context=".MapsActivity" />
-
-
-
-
-
-
-</LinearLayout>
+        android:layout_below="@id/image"
+        android:layout_marginTop="24dp" />
+</RelativeLayout>
