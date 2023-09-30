@@ -66,9 +66,9 @@ class EditProfilePage : AppCompatActivity(),OnMapReadyCallback {
                     if (user != null) {
 
                         nameTextView.text="Name: ${user.name ?: "N/A"}"
-                        mailTextView.text="Age: ${user.email ?: "N/A"}"
-                        ageTextView.text="College: ${user.age ?: "N/A"}"
-                        collegeTextView.text="Email: ${user.college ?: "N/A"}"
+                        mailTextView.text="Email: ${user.email ?: "N/A"}"
+                        ageTextView.text="Age: ${user.age ?: "N/A"}"
+                        collegeTextView.text="College: ${user.college ?: "N/A"}"
                     }
 
 
